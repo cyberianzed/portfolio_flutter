@@ -33,6 +33,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   url_launcher: ^6.1.6
+  flutter_launcher_icons: ^0.10.0
 
 dev_dependencies:
   flutter_test:
@@ -40,7 +41,11 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
+flutter_icons:
+  android: true
+  web: true
+  adaptive_icon_background: "#0e1f2f"
+  image_path: "assets/J.svg"
 # The following section is specific to Flutter.
 flutter:
   # The following line ensures that the Material Icons font is
