@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_icons/flutter_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:web_portfolio/models/carousel_item_model.dart';
@@ -53,11 +54,29 @@ List<CarouselItemModel> carouselItems = List.generate(
               SocialIcon(
                 link: 'https://github.com/cyberianzed',
                 sIcon: Icon(
-                  Icons.safety_check,
+                  AntDesign.github,
                   color: kPrimaryColor,
-                  size: 50,
+                  size: 35,
                 ),
-              )
+              ),
+              SizedBox(width: 10),
+              SocialIcon(
+                link: 'https://www.linkedin.com/in/josekjames/',
+                sIcon: Icon(
+                  AntDesign.linkedin_square,
+                  color: kPrimaryColor,
+                  size: 35,
+                ),
+              ),
+              SizedBox(width: 10),
+              SocialIcon(
+                link: 'https://t.me/Im_Joz',
+                sIcon: Icon(
+                  EvilIcons.sc_telegram,
+                  color: kPrimaryColor,
+                  size: 35,
+                ),
+              ),
             ],
           ),
           SizedBox(

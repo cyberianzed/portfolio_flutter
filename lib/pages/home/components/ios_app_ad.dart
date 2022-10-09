@@ -59,7 +59,7 @@ class IosAppAd extends StatelessWidget {
                             height: 15.0,
                           ),
                           Text(
-                            "SAMPLE\n APP",
+                            "SAMPLE\nAPP",
                             style: GoogleFonts.oswald(
                               color: Colors.white,
                               fontWeight: FontWeight.w900,

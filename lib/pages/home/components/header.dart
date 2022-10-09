@@ -8,10 +8,8 @@ import 'package:web_portfolio/utils/globals.dart';
 import 'package:web_portfolio/utils/screen_helper.dart';
 
 List<HeaderItem> headerItems = [
-  HeaderItem(
-    title: "HOME",
-    onTap: () {},
-  ),
+  // HeaderItem(title: "Portfolio website made using flutter💙", onTap: () {}),
+  HeaderItem(title: "HOME", onTap: () {}),
   HeaderItem(title: "ABOUT ME", onTap: () {}),
   HeaderItem(title: "SERVICES", onTap: () {}),
   HeaderItem(title: "PORTFOLIO", onTap: () {}),
@@ -49,7 +47,7 @@ class HeaderLogo extends StatelessWidget {
                     fontSize: 36.0,
                     fontWeight: FontWeight.bold,
                   ),
-                )
+                ),
               ],
             ),
           ),
@@ -142,6 +140,10 @@ class Header extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             HeaderLogo(),
+            Text(
+              'Portfolio website made using flutter💙',
+              style: TextStyle(color: Colors.white),
+            ),
             // Restart server to make icons work
             // Lets make a scaffold key and create a drawer
             GestureDetector(
@@ -169,6 +171,14 @@ class Header extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           HeaderLogo(),
+          Text(
+            'Portfolio website made using flutter💙',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 13.0,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
           HeaderRow(),
         ],
       ),
