@@ -6,7 +6,6 @@ import 'package:web_portfolio/pages/home/components/header.dart';
 import 'package:web_portfolio/pages/home/components/ios_app_ad.dart';
 import 'package:web_portfolio/pages/home/components/portfolio_stats.dart';
 import 'package:web_portfolio/pages/home/components/skill_section.dart';
-import 'package:web_portfolio/pages/home/components/website_ad.dart';
 import 'package:web_portfolio/utils/constants.dart';
 import 'package:web_portfolio/utils/globals.dart';
 
@@ -35,7 +34,7 @@ class Home extends StatelessWidget {
                           padding: EdgeInsets.symmetric(horizontal: 28.0),
                           child: TextButton(
                             onPressed: headerItems[index].onTap,
-                            child: Text(
+                            child: SelectableText(
                               headerItems[index].title,
                               style: TextStyle(
                                 color: Colors.white,

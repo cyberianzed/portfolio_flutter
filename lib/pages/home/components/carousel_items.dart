@@ -13,7 +13,7 @@ List<CarouselItemModel> carouselItems = List.generate(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text(
+          SelectableText(
             "FLUTTER DEVOLOPER",
             style: GoogleFonts.oswald(
               color: kPrimaryColor,
@@ -24,7 +24,7 @@ List<CarouselItemModel> carouselItems = List.generate(
           SizedBox(
             height: 18.0,
           ),
-          Text(
+          SelectableText(
             "JOSE K\nJAMES",
             style: GoogleFonts.oswald(
               color: Colors.white,
@@ -36,7 +36,7 @@ List<CarouselItemModel> carouselItems = List.generate(
           SizedBox(
             height: 10.0,
           ),
-          Text(
+          SelectableText(
             "Full-Stack developer, based in India",
             style: TextStyle(
               color: kCaptionColor,
@@ -47,10 +47,26 @@ List<CarouselItemModel> carouselItems = List.generate(
           SizedBox(
             height: 10.0,
           ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              SocialIcon(
+                link: 'https://github.com/cyberianzed',
+                sIcon: Icon(
+                  Icons.safety_check,
+                  color: kPrimaryColor,
+                  size: 50,
+                ),
+              )
+            ],
+          ),
+          SizedBox(
+            height: 30.0,
+          ),
           Container(
             child: Wrap(
               children: [
-                Text(
+                SelectableText(
                   "Need a full custom website?",
                   style: TextStyle(
                     color: kCaptionColor,
@@ -62,7 +78,7 @@ List<CarouselItemModel> carouselItems = List.generate(
                   onTap: () {},
                   child: MouseRegion(
                     cursor: SystemMouseCursors.click,
-                    child: Text(
+                    child: SelectableText(
                       " Got a project? Let's talk.",
                       style: TextStyle(
                         height: 1.5,
@@ -116,3 +132,24 @@ List<CarouselItemModel> carouselItems = List.generate(
     ),
   ),
 );
+
+class SocialIcon extends StatelessWidget {
+  final String link;
+  final Icon sIcon;
+
+  const SocialIcon({
+    Key key,
+    @required this.link,
+    @required this.sIcon,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return IconButton(
+      onPressed: () {
+        launch(link);
+      },
+      icon: sIcon,
+    );
+  }
+}

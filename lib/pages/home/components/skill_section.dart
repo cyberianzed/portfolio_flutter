@@ -102,7 +102,7 @@ class SkillSection extends StatelessWidget {
                                         padding: EdgeInsets.only(left: 10.0),
                                         alignment: Alignment.centerLeft,
                                         height: 38.0,
-                                        child: Text(skill.skill),
+                                        child: SelectableText(skill.skill),
                                         color: Colors.white,
                                       ),
                                     ),

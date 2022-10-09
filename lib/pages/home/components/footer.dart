@@ -139,7 +139,7 @@ Widget _buildUi(double width, BuildContext context) {
                 children: [
                   Padding(
                     padding: EdgeInsets.only(bottom: 8.0),
-                    child: Text(
+                    child: SelectableText(
                       "Copyright (c) 2021 Jose K James. All rights Reserved",
                       style: TextStyle(
                         color: kCaptionColor,
@@ -153,7 +153,7 @@ Widget _buildUi(double width, BuildContext context) {
                   //       onTap: () {},
                   //       child: MouseRegion(
                   //         cursor: SystemMouseCursors.click,
-                  //         child: Text(
+                  //         child: SelectableText(
                   //           "Privacy Policy",
                   //           style: TextStyle(
                   //             color: kCaptionColor,
@@ -163,7 +163,7 @@ Widget _buildUi(double width, BuildContext context) {
                   //     ),
                   //     Container(
                   //       padding: EdgeInsets.symmetric(horizontal: 8.0),
-                  //       child: Text(
+                  //       child: SelectableText(
                   //         "|",
                   //         style: TextStyle(
                   //           color: kCaptionColor,
@@ -174,7 +174,7 @@ Widget _buildUi(double width, BuildContext context) {
                   //       onTap: () {},
                   //       child: MouseRegion(
                   //         cursor: SystemMouseCursors.click,
-                  //         child: Text(
+                  //         child: SelectableText(
                   //           "Terms & Conditions",
                   //           style: TextStyle(
                   //             color: kCaptionColor,

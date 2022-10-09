@@ -59,7 +59,7 @@ class IosAppAd extends StatelessWidget {
                             height: 15.0,
                           ),
                           Text(
-                            "UNIVERSAL\nSMART HOME APP",
+                            "SAMPLE\n APP",
                             style: GoogleFonts.oswald(
                               color: Colors.white,
                               fontWeight: FontWeight.w900,
@@ -97,7 +97,7 @@ class IosAppAd extends StatelessWidget {
                                   child: TextButton(
                                     onPressed: () {},
                                     child: Center(
-                                      child: Text(
+                                      child: SelectableText(
                                         "EXPLORE MORE",
                                         style: TextStyle(
                                           color: Colors.white,
@@ -127,7 +127,7 @@ class IosAppAd extends StatelessWidget {
                                   child: TextButton(
                                     onPressed: () {},
                                     child: Center(
-                                      child: Text(
+                                      child: SelectableText(
                                         "NEXT APP",
                                         style: TextStyle(
                                           color: kPrimaryColor,

@@ -12,10 +12,9 @@ List<HeaderItem> headerItems = [
     title: "HOME",
     onTap: () {},
   ),
-  HeaderItem(title: "MY INTRO", onTap: () {}),
+  HeaderItem(title: "ABOUT ME", onTap: () {}),
   HeaderItem(title: "SERVICES", onTap: () {}),
   HeaderItem(title: "PORTFOLIO", onTap: () {}),
-  HeaderItem(title: "TESTIMONIALS", onTap: () {}),
   HeaderItem(title: "BLOGS", onTap: () {}),
   HeaderItem(
     title: "HIRE ME",
@@ -83,7 +82,7 @@ class HeaderRow extends StatelessWidget {
                             horizontal: 20.0, vertical: 5.0),
                         child: TextButton(
                           onPressed: item.onTap,
-                          child: Text(
+                          child: SelectableText(
                             item.title,
                             style: TextStyle(
                               color: Colors.white,
@@ -100,7 +99,7 @@ class HeaderRow extends StatelessWidget {
                         margin: EdgeInsets.only(right: 30.0),
                         child: GestureDetector(
                           onTap: item.onTap,
-                          child: Text(
+                          child: SelectableText(
                             item.title,
                             style: TextStyle(
                               color: Colors.white,

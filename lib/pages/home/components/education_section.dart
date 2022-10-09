@@ -70,7 +70,7 @@ class EducationSection extends StatelessWidget {
               children: [
                 Container(
                   constraints: BoxConstraints(maxWidth: 400.0),
-                  child: Text(
+                  child: SelectableText(
                     "A full stack all round developer that does all the job he needs to do at all times. Actually this is a false statement",
                     style: TextStyle(
                       color: Colors.white,
@@ -123,7 +123,7 @@ class EducationSection extends StatelessWidget {
                                   cursor: SystemMouseCursors.click,
                                   child: GestureDetector(
                                     onTap: () {},
-                                    child: Text(
+                                    child: SelectableText(
                                       education.linkName,
                                       style: TextStyle(
                                         color: Colors.white,
