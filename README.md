@@ -1,6 +1,6 @@
 # portfolio_flutter
 
-A Portfolio website built completely using flutter💙.  
+A Responsive Portfolio website built completely using flutter💙.  
 Site is deployed in another [**Repo**](https://github.com/cyberianzed/cyberianzed.github.io)  
 
 # Website
